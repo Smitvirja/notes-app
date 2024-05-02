@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Activity.login_page">
+
+
+    <ImageView
+        android:id="@+id/accicon"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginVertical="@dimen/_32sdp"
+        android:background="@drawable/background_add_button"
+        android:contentDescription="TODO"
+        android:src="@drawable/accicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        tools:ignore="HardcodedText,MissingConstraints"></ImageView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="LOGIN"
+        android:textColor="#FBFBFB"
+        android:textSize="@dimen/_25ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/textback"
+        android:drawableLeft="@drawable/mail_outline_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:hint="Username"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFEFE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accicon"
+        app:layout_constraintVertical_bias="0.189"
+        tools:ignore="HardcodedText,RtlHardcoded,RtlSymmetry,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/register"
+        android:textColor="#2196F3"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.151"
+        tools:ignore="VisualLintBounds" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textback"
+        android:backgroundTint="#2196F3"
+        android:fontFamily="@font/ubuntu"
+        android:shadowColor="#673AB7"
+        android:text="@string/submit"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorLink="#8F5353"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.103"></Button>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/textback"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:fontFamily="@font/ubuntu"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu"
+        android:text="@string/dont_have_account"
+        android:textColor="#FDF7F7"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.071"
+        tools:ignore="MissingConstraints,VisualLintBounds" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

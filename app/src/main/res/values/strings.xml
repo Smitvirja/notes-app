@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">notes_app</string>
+    <string name="my_notes">My Notes</string>
+    <string name="search_notes">search notes</string>
+    <string name="type_note_here">Type note here</string>
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="note_title">Note title</string>
+    <string name="submit">Submit</string>
+    <string name="password">Password</string>
+    <string name="textview">TextView</string>
+    <string name="get_you_started">GET YOU STARTED</string>
+    <string name="let_s">LET\'S</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="username">Username</string>
+    <string name="already_have_account">Already Have Account?</string>
+    <string name="email">Email</string>
+    <string name="re_password">Password</string>
+    <string name="login">Login</string>
+    <string name="dont_have_account">Dont have account.</string>
+    <string name="register">Register</string>
+</resources>
