@@ -1,7 +1,5 @@
 package com.example.notes_app.Models;
 
-import android.widget.EditText;
-
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -25,13 +23,17 @@ public class Notes  implements Serializable{
     @ColumnInfo(name = "date")
     String date ="";
 
+    @ColumnInfo(name = "color")
+    String color = "";
 
 
-    public Notes(String title, String subtitle, String note, String date) {
+
+    public Notes(String title, String subtitle, String note, String date, String color) {
         this.title = title;
         this.subtitle = subtitle;
         this.note = note;
         this.date = date;
+        this.color = color;
     }
 
     public int getId() {
@@ -72,5 +74,13 @@ public class Notes  implements Serializable{
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getColor() {
+        return color; // Add this method
+    }
+
+    public void setColor(String color) {
+        this.color = color; // Add this method
     }
 }

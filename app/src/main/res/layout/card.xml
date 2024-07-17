@@ -27,7 +27,7 @@
             android:fontFamily="@font/ubuntu_bold"
             android:includeFontPadding="false"
             android:textColor="@color/colorwhite"
-            android:textSize="@dimen/_13ssp"
+            android:textSize="@dimen/_15ssp"
             />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_marginBottom="@dimen/_4sdp"
             android:fontFamily="@font/ubuntu"
             android:includeFontPadding="false"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/colorwhite"
             android:textSize="@dimen/_12ssp"
              />
 
@@ -55,8 +55,7 @@
         android:fontFamily="@font/ubuntu"
         android:textColor="@color/colorwhite"
         android:includeFontPadding="false"
-        android:textSize="@dimen/_7ssp"
-        ></TextView>
+        android:textSize="@dimen/_7ssp" />
 
 
         <TextView

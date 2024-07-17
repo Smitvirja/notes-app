@@ -1,6 +1,7 @@
 package com.example.notes_app.adapter;
 
 import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.notes_app.Models.Notes;
 import com.example.notes_app.R;
@@ -86,6 +88,20 @@ public class recayclerviewadapter extends RecyclerView.Adapter<recayclerviewadap
             }
             viewdate.setText(notes.getDate());
             viewnote.setText(notes.getNote());
+
+
+            String noteColor = notes.getColor(); // Assuming Notes model has a getColor() method
+            if (noteColor != null && !noteColor.isEmpty()) {
+                GradientDrawable background = (GradientDrawable) ContextCompat.getDrawable(itemView.getContext(), R.drawable.background_note);
+                assert background != null;
+                background.setColor(Color.parseColor(notes.getColor()));
+                notesContainer.setBackground(background);
+            } else {
+                GradientDrawable background = (GradientDrawable) ContextCompat.getDrawable(itemView.getContext(), R.drawable.background_note);
+                assert background != null;
+                background.setColor(Color.parseColor(notes.getColor()));
+                notesContainer.setBackground(background); // Default color
+            }
             // Set the background color dynamically
 
         }

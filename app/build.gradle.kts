@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.notes_app"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.notes_app"
@@ -46,6 +46,7 @@ dependencies {
 
     //recycler view
     implementation("androidx.recyclerview:recyclerview:1.3.1")
+
 
     //scalable size unit
     implementation("com.intuit.sdp:sdp-android:1.0.6")
