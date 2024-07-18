@@ -15,7 +15,7 @@
         android:fontFamily="@font/ubuntu_medium"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:text="@string/miscellaneous"
+        android:text="@string/color"
         android:textColor="@color/white"
         android:textSize="@dimen/_13sdp"/>
 
@@ -29,11 +29,13 @@
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
             android:layout_weight="1">
             <View
                 android:id="@+id/viewcolor1"
                 android:layout_width="@dimen/_35sdp"
                 android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_10sdp"
                 android:background="@drawable/background_note_color_1"/>
 
         <ImageView
@@ -132,13 +134,6 @@
         </FrameLayout>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/ubuntu_medium"
-            android:includeFontPadding="false"
-            android:text="@string/pick_color"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_13ssp"/>
+
     </LinearLayout>
 </LinearLayout>

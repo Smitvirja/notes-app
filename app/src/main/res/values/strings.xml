@@ -20,4 +20,5 @@
     <string name="register">Register</string>
     <string name="miscellaneous">Miscellaneous</string>
     <string name="pick_color">pick_color</string>
+    <string name="color">Color</string>
 </resources>
