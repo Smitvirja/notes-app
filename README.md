@@ -1,0 +1,1 @@
+this is a note appliction for android created using java .this is a just a fun project for my bachelor and is not complete ,there can be some mistake so if you find any you are welcome to correct it .  
